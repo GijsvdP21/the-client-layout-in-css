@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
-      
+
+      body {
+        display: grid;
+        grid-template-columns: 20% 1fr 1fr 20%;
+        grid-template-rows: 11rem 1.5rem 1.5rem 11rem;
+        column-gap: 20px;
+      }
+      h1 {
+        font-size: 100%;
+      }
+
+      header {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 9.5rem, 0% 100%);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      nav {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 11.1rem, 0% 100%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      main {
+        clip-path: polygon(0% 1.5rem, 100% 0%, 100% 100%, 0% 100%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+      footer {
+        clip-path: polygon(0% 1.5rem, 100% 0%, 100% 100%, 0% 100%);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+      }
     </style>
   </head>
   <body id="advanced-layout-4">
